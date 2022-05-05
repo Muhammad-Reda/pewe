@@ -4,7 +4,6 @@ export default {
     data() {
         return {
             ayats: [],
-            arti: [],
             audio: null,
             namaSurah: null,
             myinput: "",
