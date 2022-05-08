@@ -1,7 +1,7 @@
 <script src="../assets/quran2.js"></script>
 
 <template>
-    <section class="search">
+    <div class="search">
         <div class="inputt">
             <a
                 href="https://quranschool.com/list-of-quran-surah/"
@@ -17,9 +17,9 @@
             />
             <button @click="cari" class="btn">Cari</button>
         </div>
-    </section>
+    </div>
 
-    <section class="surah">
+    <div class="surah">
         <div class="suara">
             <p v-if="audio">
                 <audio controls class="suaraa">
@@ -35,15 +35,15 @@
         <div class="bis">
             <p class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
         </div>
-    </section>
+    </div>
 
-    <section class="hasil">
+    <div class="hasil">
         <ul class="lista">
             <li class="ayat" v-for="ayat in ayats" :key="ayat.id">
                 {{ ayat.text_uthmani }} {{ ayat.text }}
             </li>
         </ul>
-    </section>
+    </div>
 </template>
 
 <style src="../assets/quran.css"></style>
